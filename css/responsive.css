@@ -1,0 +1,81 @@
+@media (max-width: 720px) {
+  .container { width: min(calc(100% - 32px), var(--max-width)); }
+  .site-header__inner { align-items: flex-start; flex-direction: column; padding: 16px 0; gap: 10px; }
+  .site-nav { width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 2px; }
+  .site-nav__link { white-space: nowrap; }
+  .page { padding: 32px 0 48px; }
+  .card, .module-card, .research-card, .knowledge-card, .quiz-card { padding: 20px; }
+  .hero { padding: 48px 0; }
+  .hero__grid, .progress-panel { grid-template-columns: 1fr; gap: 28px; }
+  .progress-panel__actions { width: 100%; }
+  .progress-panel__actions .button { width: 100%; }
+  .learning-overview { padding: 24px; }
+  .home-section { padding: 48px 0; }
+  .section-heading--row, .continue-card, .site-footer .container { align-items: flex-start; flex-direction: column; }
+  .quick-search { flex-direction: column; }
+  .quick-search .button { width: 100%; }
+  .module-grid, .research-grid { grid-template-columns: 1fr; }
+  .progress-summary { grid-template-columns: 1fr; }
+  .progress-summary div { padding: 0 0 0 14px; }
+  .module-page { padding: 20px 0 48px; }
+  .module-header { align-items: stretch; flex-direction: column; gap: 18px; margin: 20px 0 28px; padding-bottom: 22px; }
+  .module-header__progress { flex-basis: auto; }
+  .module-layout { display: block; }
+  .module-sidebar { position: static; padding: 0; border: 0; border-radius: 0; background: transparent; }
+  .module-sidebar__summary { display: none; }
+  .module-sidebar__toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 12px 14px; border: 1px solid var(--color-border); border-radius: var(--radius-button); background: var(--color-surface); color: var(--color-primary); font-family: inherit; font-size: .92rem; font-weight: 700; }
+  .module-sidebar__nav { display: none; margin: 8px 0 20px; padding: 12px 14px; border: 1px solid var(--color-border); border-radius: var(--radius-button); background: var(--color-surface); }
+  .module-sidebar.is-open .module-sidebar__nav { display: block; }
+  .module-sidebar.is-open .module-sidebar__toggle span { transform: rotate(180deg); }
+  .module-content { max-width: none; }
+  .objective-card, .key-concept, .why-it-matters, .key-takeaway { padding: 22px; }
+  .concept-flow--horizontal { flex-direction: column; align-items: stretch; }
+  .concept-flow--horizontal .concept-flow__connector { align-self: center; transform: rotate(90deg); }
+  .system-overview, .comparison-grid, .research-grid--module { grid-template-columns: 1fr; }
+  .learning-section { padding: 32px 0; }
+  .visual-explanation { padding: 18px; }
+  .module-sources li { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .previous-next { flex-direction: column; gap: 10px; }
+  .previous-next__link { display: block; max-width: none; min-height: 48px; padding: 12px 0; }
+  .previous-next__link--next { margin-left: 0; text-align: left; }
+  .learning-center { padding: 32px 0 48px; }
+  .module-completion { align-items: stretch; flex-direction: column; }
+  .module-completion .button { width: 100%; }
+  .learning-progress-reset { align-items: stretch; flex-direction: column; padding: 22px; }
+  .learning-progress-reset__actions { flex-direction: column; }
+  .learning-progress-reset__actions .button { width: 100%; }
+  .knowledge-page, .knowledge-detail { padding: 32px 0 48px; }
+  .knowledge-search-form { flex-direction: column; }
+  .knowledge-search-form .button { width: 100%; }
+  .knowledge-grid { grid-template-columns: 1fr; }
+  .knowledge-detail__header { align-items: flex-start; flex-direction: column; margin: 20px 0 26px; }
+  .related-module-list a { grid-template-columns: 1fr; gap: 4px; }
+  .knowledge-source-list li { align-items: flex-start; flex-direction: column; }
+  .back-to-top { right: 16px; bottom: 16px; }
+  .page, .module-page, .knowledge-page, .knowledge-detail, .research-page, .research-detail, .quiz-page { padding-bottom: 96px; }
+  .research-library-grid { grid-template-columns: 1fr; }
+  .research-detail__header { align-items: flex-start; flex-direction: column; margin: 20px 0 26px; }
+  .research-source-list li { align-items: flex-start; flex-direction: column; }
+  .quiz-intro, .quiz-confirmation, .quiz-result, .quiz-review, .quiz-question-card { padding: 24px; }
+  .quiz-intro__meta { grid-template-columns: 1fr; }
+  .quiz-layout { grid-template-columns: 1fr; gap: 16px; }
+  .quiz-sidebar { position: static; }
+  .quiz-question-card__actions, .quiz-review__actions { flex-direction: column; }
+  .quiz-question-card__actions .button, .quiz-review__actions .button { width: 100%; }
+}
+
+@media (min-width: 721px) and (max-width: 1024px) {
+  .hero__grid, .progress-panel { grid-template-columns: 1fr; }
+  .module-grid, .research-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .knowledge-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .research-library-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quiz-layout { grid-template-columns: 170px minmax(0, 1fr); gap: 22px; }
+  .module-layout { grid-template-columns: 1fr; gap: 28px; }
+  .module-sidebar { position: static; display: grid; grid-template-columns: 220px 1fr; gap: 20px; }
+  .module-sidebar__summary { padding: 0; border: 0; }
+  .module-sidebar__nav { margin: 0; }
+  .module-sidebar__nav > p { display: none; }
+  .module-sidebar__nav { display: flex; flex-wrap: wrap; align-content: start; gap: 4px 14px; }
+  .module-sidebar__link { width: auto; padding: 2px 0; }
+}
+}
